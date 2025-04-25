@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Burguer - Hamburgueria Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AK BURGUER</h1>
+                <p>Hamburgueria Artesanal</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="cart-icon">
+                        <a href="#carrinho" id="cart-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>OS MELHORES HAMBÚRGUERES DA CIDADE</h2>
+            <p>Ingredientes selecionados e preparo artesanal</p>
+            <a href="#cardapio" class="btn">VER CARDÁPIO</a>
+        </div>
+    </section>
+
+    <section id="cardapio" class="menu">
+        <div class="container">
+            <h2 class="section-title">NOSSO CARDÁPIO</h2>
+            <div class="menu-grid">
+                <!-- Itens serão adicionados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="carrinho" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Seu Carrinho</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total-price">R$ 0,00</span></h3>
+            </div>
+            <div class="cart-actions">
+                <button class="btn clear-cart">Limpar Carrinho</button>
+                <button class="btn checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout" class="checkout-modal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h2>Finalizar Pedido</h2>
+                <button class="close-checkout">&times;</button>
+            </div>
+            <div class="checkout-info">
+                <h3>Resumo do Pedido</h3>
+                <div class="order-summary">
+                    <!-- Resumo do pedido será adicionado aqui -->
+                </div>
+                <div class="pix-payment">
+                    <h3>Pagamento via PIX</h3>
+                    <div class="pix-qrcode">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=PIXAKBURGUER123456789" alt="QR Code PIX">
+                        <p>Escaneie o QR code para pagar com PIX</p>
+                        <p class="pix-instructions">Após o pagamento, envie o comprovante para (00) 98765-4321</p>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-actions">
+                <button class="btn back-to-cart">Voltar ao Carrinho</button>
+                <button class="btn confirm-order">Confirmar Pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">CONTATO</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Quinta: 18h - 23h</p>
+                    <p>Sexta e Sábado: 18h - 00h</p>
+                    <p>Domingo: 18h - 22h</p>
+                    <p>Segunda: Fechado</p>
+
+                    <h3>Endereço</h3>
+                    <p>--------------</p>
+                    <p>--------------</p>
+
+                    <h3>Telefone</h3>
+                    <p>(00) **********</p>
+                </div>
+                <div class="delivery-info">
+                    <h3>Delivery</h3>
+                    <p>Entregamos em toda a região</p>
+                    <p>Taxa de entrega: R$ 5,00</p>
+                    <p>Tempo médio de entrega: 40 min</p>
+                    
+                    <h3>Formas de Pagamento</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p>&copy; 2023 AK Burguer - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
